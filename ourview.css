@@ -1,0 +1,154 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    color: #333;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h1, h2, h3, h4 {
+    text-transform: capitalize;
+    margin-bottom: 15px;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  /* .section {
+    padding: 50px 0;
+  }
+  
+  .section-center {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1170px;
+  } */
+  
+  .review {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    max-width: 400px; 
+    margin: 0 auto; 
+  }
+  .icon{
+    background: #40c2ed;
+    padding: 20px;
+    border-radius: 50px;
+    color: #fff;
+    max-width: 10px;
+    max-height: 10px;  
+    margin-left: 6.5rem;
+    position: absolute;
+    margin-top: 1.3rem;
+    z-index: 1;
+  }
+  .icon-h1{
+    font-size: 36px;
+    margin: 0 0;
+    margin-top: -2rem;
+    margin-left: -3px;
+  }
+  .review:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .img-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #person-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+
+  
+  
+  
+  #author {
+    margin-bottom: 5px;
+  }
+  
+  #job {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #007bff;
+    font-size: 14px;
+  }
+  
+  .prev-btn,
+  .next-btn {
+    color: #007bff;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .prev-btn:hover,
+  .next-btn:hover {
+    color: #0056b3;
+  }
+  
+  .random-btn {
+    margin-top: 10px;
+    background: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .random-btn:hover {
+    background: #0056b3;
+  }
+  
+  @media (max-width: 458px) and (min-width: 258px) {
+    .icon{
+        margin-left: 5.3rem;
+      }
+  }
+  @media (max-width: 258px) and (min-width: 50px) {
+    .icon{
+        margin-left: -0.2rem;
+      }
+  }
